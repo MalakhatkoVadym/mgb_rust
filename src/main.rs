@@ -28,7 +28,7 @@ async fn main() {
     let args = Args::parse();
 
     // Load configuration from the specified file
-    let config: MGBConfig = MGBConfig::parse_from_file(&args.config_file_path.as_str());
+    let config: MGBConfig = MGBConfig::parse_from_file(args.config_file_path.as_str());
 
     init_logger(args.verbose, config.log_file_path.clone(), config.log_level);
 
