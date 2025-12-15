@@ -1,0 +1,5 @@
+log_level = "info" # Set the log level for the application (debug, error, info, trace, warn)
+log_file_path = "logs/mgb.log" # Path to the log file
+database_url = "sqlite:mgb.db" # SQLite database connection string
+server_host = "127.0.0.1" # Server host address
+server_port = 3000 # Server port
