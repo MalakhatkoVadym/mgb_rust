@@ -37,3 +37,23 @@
 2025-12-15T18:21:57.999621Z  INFO mgb_rust: Server listening on 127.0.0.1:3000
 2025-12-15T18:21:59.979760Z  INFO mgb_rust::api::record: Fetching all records
 2025-12-15T18:21:59.980129Z  INFO mgb_rust::api::record: Retrieved 2 records
+2025-12-16T01:45:00.563065Z  INFO mgb_rust: MGB app initialized
+2025-12-16T01:45:00.567778Z  INFO mgb_rust: Database connected successfully
+2025-12-16T01:45:00.568114Z  INFO mgb_rust: Server listening on 127.0.0.1:3000
+2025-12-16T01:45:25.179672Z  INFO mgb_rust: MGB app initialized
+2025-12-16T01:45:25.181178Z  INFO mgb_rust: Database connected successfully
+2025-12-16T01:45:25.181478Z  INFO mgb_rust: Server listening on 127.0.0.1:3000
+2025-12-16T01:45:28.020800Z  INFO mgb_rust::api::artist: Creating new artist: "The Beatles"
+2025-12-16T01:45:28.023998Z  INFO mgb_rust::api::artist: Artist created successfully with id: 1
+2025-12-16T01:45:28.030660Z  INFO mgb_rust::api::artist: Fetching all artists
+2025-12-16T01:45:28.031110Z  INFO mgb_rust::api::artist: Retrieved 1 artists
+2025-12-16T01:45:28.037031Z  INFO mgb_rust::api::artist: Fetching artist with id: 1
+2025-12-16T01:45:28.043547Z  INFO mgb_rust::api::artist: Updating artist with id: 1
+2025-12-16T01:45:28.045518Z  INFO mgb_rust::api::artist: Artist updated successfully
+2025-12-16T01:45:37.694529Z  INFO mgb_rust: MGB app initialized
+2025-12-16T01:45:37.696012Z  INFO mgb_rust: Database connected successfully
+2025-12-16T01:45:40.538660Z  INFO mgb_rust::api::artist: Creating new artist: "Test Artist"
+2025-12-16T01:45:40.541078Z  INFO mgb_rust::api::artist: Artist created successfully with id: 2
+2025-12-16T01:45:40.548234Z  INFO mgb_rust::api::artist: Deleting artist with id: 1
+2025-12-16T01:45:40.551087Z  INFO mgb_rust::api::artist: Artist deleted successfully
+2025-12-16T01:45:40.558028Z  INFO mgb_rust::api::artist: Fetching artist with id: 1
