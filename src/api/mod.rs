@@ -1,3 +1,4 @@
+mod artist;
 mod record;
 
 use axum::{Json, Router, http::StatusCode, response::IntoResponse, routing::get};
@@ -14,6 +15,7 @@ pub fn create_router(state: AppState) -> Router {
     Router::new()
         .route("/health", get(health_check))
         .nest("/records", record::routes(state.clone()))
+        .nest("/artists", artist::routes(state.clone()))
 }
 
 async fn health_check() -> impl IntoResponse {
