@@ -4,6 +4,7 @@ mod api;
 mod config;
 mod db;
 mod logger;
+mod state;
 
 use api::{AppState, create_router};
 use config::MGBConfig;
@@ -46,7 +47,16 @@ async fn main() {
     };
 
     // Create application state
-    let state = AppState { db };
+    let sm = state::StateMachine::new();
+
+    // Log initial state in background
+    let sm_clone = sm.clone();
+    tokio::spawn(async move {
+        let s = sm_clone.get_state().await;
+        info!("Initial app state: {:?}", s);
+    });
+
+    let state = AppState { db, sm };
 
     // Build the router
     let app = create_router(state);
