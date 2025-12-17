@@ -2,6 +2,9 @@ mod record;
 
 pub use record::{CreateRecord, RecordRepository};
 
+mod artist;
+
+pub use artist::{ArtistRepository, CreateArtist};
 use sqlx::{Error, sqlite::SqlitePool};
 
 #[derive(Debug, Clone)]
@@ -37,11 +40,16 @@ impl Database {
 
         // Create tables
         record::create_table(&pool).await?;
+        artist::create_table(&pool).await?;
 
         Ok(Database { pool })
     }
 
     pub fn record_repo(&self) -> RecordRepository {
         RecordRepository::new(self.pool.clone())
+    }
+
+    pub fn artist_repo(&self) -> ArtistRepository {
+        ArtistRepository::new(self.pool.clone())
     }
 }

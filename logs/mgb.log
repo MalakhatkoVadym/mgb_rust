@@ -37,3 +37,20 @@
 2025-12-15T18:21:57.999621Z  INFO mgb_rust: Server listening on 127.0.0.1:3000
 2025-12-15T18:21:59.979760Z  INFO mgb_rust::api::record: Fetching all records
 2025-12-15T18:21:59.980129Z  INFO mgb_rust::api::record: Retrieved 2 records
+2025-12-17T16:29:53.651811Z  INFO mgb_rust: MGB app initialized
+2025-12-17T16:29:53.655288Z  INFO mgb_rust: Database connected successfully
+2025-12-17T16:29:53.655726Z  INFO mgb_rust: Server listening on 127.0.0.1:3000
+2025-12-17T16:31:13.525583Z  INFO mgb_rust: MGB app initialized
+2025-12-17T16:31:13.528492Z  INFO mgb_rust: Database connected successfully
+2025-12-17T16:31:13.529059Z  INFO mgb_rust: Server listening on 127.0.0.1:3000
+2025-12-17T16:31:49.227666Z  INFO mgb_rust: MGB app initialized
+2025-12-17T16:31:49.230318Z  INFO mgb_rust: Database connected successfully
+2025-12-17T16:31:49.231123Z  INFO mgb_rust: Server listening on 127.0.0.1:3000
+2025-12-17T16:32:28.253505Z  INFO mgb_rust: MGB app initialized
+2025-12-17T16:32:28.256278Z  INFO mgb_rust: Database connected successfully
+2025-12-17T16:32:28.256879Z  INFO mgb_rust: Server listening on 127.0.0.1:3000
+2025-12-17T16:32:56.211595Z  INFO mgb_rust: MGB app initialized
+2025-12-17T16:32:56.214828Z  INFO mgb_rust: Database connected successfully
+2025-12-17T16:34:39.003841Z  INFO mgb_rust: MGB app initialized
+2025-12-17T16:34:39.006425Z  INFO mgb_rust: Database connected successfully
+2025-12-17T16:34:39.006926Z  INFO mgb_rust: Server listening on 127.0.0.1:3000
